@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        /*Hero[] heroes={new Magic(),
+                new Medic(),new Warrior()};
+        for (int i = 0; i < heroes.length; i++) {
+                applyAll(heroes[i]);
+        }
+    }
+    public static void applyAll(HavingSuperAbility heroes){
+        heroes.applySuperAbility();
+    }*/
+        HavingSuperAbility[] heroes={new Magic(),new Medic(),new Warrior()};
+        for (int i = 0; i < heroes.length; i++) {
+             heroes[i].applySuperAbility();
+
+        if (heroes[i] instanceof Medic){
+            ((Medic)heroes[i]).increaseExperience();
+                   }
+        }
+    }
+}
